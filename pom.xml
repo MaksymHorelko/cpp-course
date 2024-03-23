@@ -13,5 +13,6 @@
 	
 	<modules>
 		<module>laba1</module>
+		<module>laba2</module>
 	</modules>
 </project>
