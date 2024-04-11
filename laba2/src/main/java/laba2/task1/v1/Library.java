@@ -29,10 +29,10 @@ public class Library {
 		libraryService.addRentals(new Rental(reader1, book1, 50));
 
 		// Збереження стану системи у файл
-		libraryService.saveState("library.ser");
+		libraryService.saveState("library1.ser");
 
 		// Відновлення системи з файлу
-		LibraryService restoredSystem = LibraryService.restoreState("library.ser");
+		LibraryService restoredSystem = LibraryService.restoreState("library1.ser");
 		System.out.println("Restored Library System: " + restoredSystem);
 	}
 }

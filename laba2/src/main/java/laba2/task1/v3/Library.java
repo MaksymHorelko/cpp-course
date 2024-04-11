@@ -1,4 +1,4 @@
-package laba2.task1.v2;
+package laba2.task1.v3;
 
 public class Library {
 	public static void main(String[] args) {
@@ -29,10 +29,10 @@ public class Library {
 		libraryService.addRentals(new Rental(reader1, book1, 50));
 
 		// Збереження стану системи у файл
-		libraryService.saveState("library2.ser");
+		libraryService.saveState("library3.ser");
 
 		// Відновлення системи з файлу
-		LibraryService restoredSystem = LibraryService.restoreState("library2.ser");
+		LibraryService restoredSystem = LibraryService.restoreState("library3.ser");
 		System.out.println("Restored Library System: " + restoredSystem);
 	}
 }
