@@ -18,7 +18,7 @@ public class ClassAnalyzer {
 		StringBuilder description = new StringBuilder();
 
 		// Package name
-		description.append("Package: ").append(clazz.getPackageName()).append("\n");
+		description.append("Package: ").append(clazz.getPackage().getName()).append("\n");
 
 		// Modifiers and class name
 		int modifiers = clazz.getModifiers();
